@@ -1,10 +1,11 @@
-package com.example.android
+package com.github.jeremyrempel.yaba.android.ui
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import sample.Sample
 import sample.hello
+import com.github.jeremyrempel.yaba.android.R
 
 class MainActivity : AppCompatActivity() {
 
