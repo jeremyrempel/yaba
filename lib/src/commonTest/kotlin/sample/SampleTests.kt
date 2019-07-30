@@ -13,9 +13,4 @@ class SampleTests {
     fun testProxy() {
         assertTrue(Proxy().proxyHello().isNotEmpty())
     }
-
-    @Test
-    fun testFail() {
-        assertTrue(false)
-    }
 }
