@@ -1,3 +1,3 @@
 package com.github.jeremyrempel.yaba.android.data
 
-data class ImageResponseRow(val imageUrl: String)
+data class ImageResponseRow(val title: String, val imageUrl: String)
