@@ -1,4 +1,4 @@
-package com.github.jeremyrempel.yaba.android.ui
+package com.github.jeremyrempel.yaba.android.util
 
 import android.util.Log
 import androidx.annotation.MainThread

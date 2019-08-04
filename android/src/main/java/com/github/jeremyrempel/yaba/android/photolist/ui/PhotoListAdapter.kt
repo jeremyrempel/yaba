@@ -1,4 +1,4 @@
-package com.github.jeremyrempel.yaba.android.ui
+package com.github.jeremyrempel.yaba.android.photolist.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,11 +8,13 @@ import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.github.jeremyrempel.yaba.android.R
-import com.github.jeremyrempel.yaba.android.data.ImageResponseRow
+import com.github.jeremyrempel.yaba.android.data.ListPhotoResponseRow
 import kotlinx.android.synthetic.main.row_list.view.*
 
-class MainListAdapter(private val callback: (ImageResponseRow) -> Unit) :
-    ListAdapter<ImageResponseRow, MainListAdapter.MyViewHolder>(TaskDiffCallback()) {
+class PhotoListAdapter(private val callback: (ListPhotoResponseRow) -> Unit) :
+    ListAdapter<ListPhotoResponseRow, PhotoListAdapter.MyViewHolder>(
+        TaskDiffCallback()
+    ) {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) =
         holder.bind(getItem(position), callback)
@@ -23,7 +25,7 @@ class MainListAdapter(private val callback: (ImageResponseRow) -> Unit) :
     }
 
     class MyViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
-        fun bind(row: ImageResponseRow, callback: (ImageResponseRow) -> Unit) {
+        fun bind(row: ListPhotoResponseRow, callback: (ListPhotoResponseRow) -> Unit) {
 
             view.txt_title.text = row.title
 
@@ -37,16 +39,16 @@ class MainListAdapter(private val callback: (ImageResponseRow) -> Unit) :
         }
     }
 
-    class TaskDiffCallback : DiffUtil.ItemCallback<ImageResponseRow>() {
+    class TaskDiffCallback : DiffUtil.ItemCallback<ListPhotoResponseRow>() {
         override fun areItemsTheSame(
-            oldItem: ImageResponseRow,
-            newItem: ImageResponseRow
+            oldItem: ListPhotoResponseRow,
+            newItem: ListPhotoResponseRow
         ): Boolean =
             oldItem == newItem
 
         override fun areContentsTheSame(
-            oldItem: ImageResponseRow,
-            newItem: ImageResponseRow
+            oldItem: ListPhotoResponseRow,
+            newItem: ListPhotoResponseRow
         ): Boolean = oldItem == newItem
     }
 }

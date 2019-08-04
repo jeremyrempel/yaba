@@ -1,7 +1,9 @@
+package com.github.jeremyrempel.yaba.ui
+
 import kotlinx.serialization.Serializable
 
 @Serializable
-data class PhotosResponse(
+data class GetPhotosJsonResponse(
     val total: Int,
     val total_pages: Int,
     val results: List<Result>?

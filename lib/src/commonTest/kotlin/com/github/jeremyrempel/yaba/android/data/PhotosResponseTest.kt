@@ -1,3 +1,4 @@
+import com.github.jeremyrempel.yaba.ui.GetPhotosJsonResponse
 import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -23,13 +24,13 @@ class PhotosResponseTest {
     @Test
     fun `test photo list parsing`() {
 
-        val actualResult = Json.parse(PhotosResponse.serializer(), input)
+        val actualResult = Json.parse(GetPhotosJsonResponse.serializer(), input)
 
-        val expectedResult = PhotosResponse(
+        val expectedResult = GetPhotosJsonResponse(
             1000, 100, listOf(
-                PhotosResponse.Result(
+                GetPhotosJsonResponse.Result(
                     "kdGstD3te3M", "Description of photo", "orange and black motorcycle",
-                    PhotosResponse.Result.Urls(
+                    GetPhotosJsonResponse.Result.Urls(
                         "https://images.unsplash.com/photo-1558981408-db0ecd8a1ee4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&ixid=eyJhcHBfaWQiOjM3MjkzfQ",
                         "https://images.unsplash.com/photo-1558981408-db0ecd8a1ee4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjM3MjkzfQ"
                     )
