@@ -29,6 +29,6 @@ class MainActivity : AppCompatActivity() {
     private fun buildContentsListFragment(): Fragment {
         return supportFragmentManager
             .fragmentFactory
-            .instantiate(classLoader, PhotoListFragment::class.java.canonicalName)
+            .instantiate(classLoader, PhotoListFragment::class.java.canonicalName!!)
     }
 }

@@ -52,7 +52,7 @@ class PhotoListFragment @Inject constructor(
     }
 
     private fun listenForChanges() {
-        viewModel.getData().observe(this, Observer { onUpdate(it) } )
+        viewModel.getData().observe(this, Observer { onUpdate(it) })
         viewModel.showLoading().observe(this, Observer { isUpdating = it })
     }
 
