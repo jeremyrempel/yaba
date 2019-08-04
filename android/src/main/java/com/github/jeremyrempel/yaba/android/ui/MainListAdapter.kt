@@ -11,8 +11,8 @@ import com.github.jeremyrempel.yaba.android.R
 import com.github.jeremyrempel.yaba.android.data.ImageResponseRow
 import kotlinx.android.synthetic.main.row_list.view.*
 
-class ContentsResponseListAdapter(private val callback: (ImageResponseRow) -> Unit) :
-    ListAdapter<ImageResponseRow, ContentsResponseListAdapter.MyViewHolder>(TaskDiffCallback()) {
+class MainListAdapter(private val callback: (ImageResponseRow) -> Unit) :
+    ListAdapter<ImageResponseRow, MainListAdapter.MyViewHolder>(TaskDiffCallback()) {
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) =
         holder.bind(getItem(position), callback)
@@ -47,7 +47,6 @@ class ContentsResponseListAdapter(private val callback: (ImageResponseRow) -> Un
         override fun areContentsTheSame(
             oldItem: ImageResponseRow,
             newItem: ImageResponseRow
-        ): Boolean =
-            oldItem == newItem
+        ): Boolean = oldItem == newItem
     }
 }

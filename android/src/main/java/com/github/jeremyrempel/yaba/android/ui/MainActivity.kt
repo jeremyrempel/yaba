@@ -24,7 +24,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     private fun buildContentsListFragment(): Fragment {
 //        return supportFragmentManager
 //            .fragmentFactory

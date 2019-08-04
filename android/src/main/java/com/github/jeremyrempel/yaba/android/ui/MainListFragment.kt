@@ -22,7 +22,7 @@ class MainListFragment : Fragment(R.layout.fragment_main) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val listAdapter = ContentsResponseListAdapter(::onRowSelected)
+        val listAdapter = MainListAdapter(::onRowSelected)
 
         view.findViewById<RecyclerView>(R.id.recycler).apply {
             setHasFixedSize(true)
@@ -48,5 +48,4 @@ class MainListFragment : Fragment(R.layout.fragment_main) {
 }
 
 fun onRowSelected(imageResponseRow: ImageResponseRow) {
-    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }
