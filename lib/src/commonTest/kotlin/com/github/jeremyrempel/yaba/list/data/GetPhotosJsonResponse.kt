@@ -1,9 +1,11 @@
-import com.github.jeremyrempel.yaba.ui.GetPhotosJsonResponse
+package com.github.jeremyrempel.yaba.android.data
+
+import com.github.jeremyrempel.yaba.list.data.GetPhotosJsonResponse
 import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class PhotosResponseTest {
+class GetPhotosJsonResponse {
 
     private val input = """{
   "total": 1000,

@@ -1,8 +1,7 @@
 package com.github.jeremyrempel.yaba.interactor
 
-
 import com.github.jeremyrempel.yaba.android.data.ListPhotoResponseRow
-import com.github.jeremyrempel.yaba.ui.GetPhotosJsonResponse
+import com.github.jeremyrempel.yaba.list.data.GetPhotosJsonResponse
 
 class GetPhotosUseCaseKtor : GetPhotosUseCase {
 

@@ -1,3 +1,5 @@
 rootProject.name = 'yaba-mpp'
 
 include ':lib', ':android'
+
+enableFeaturePreview('GRADLE_METADATA')

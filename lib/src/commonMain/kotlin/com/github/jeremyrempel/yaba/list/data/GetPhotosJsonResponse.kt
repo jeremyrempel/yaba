@@ -1,4 +1,4 @@
-package com.github.jeremyrempel.yaba.ui
+package com.github.jeremyrempel.yaba.list.data
 
 import kotlinx.serialization.Serializable
 

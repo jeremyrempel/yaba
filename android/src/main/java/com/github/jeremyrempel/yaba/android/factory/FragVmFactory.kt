@@ -9,6 +9,8 @@ import javax.inject.Provider
 class FragVmFactory @Inject constructor(
     private val mainListFragVm: Provider<PhotoListViewModel>
 ) : ViewModelProvider.Factory {
+
+    @SuppressWarnings("unchecked")
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return when (modelClass) {
             PhotoListViewModel::class.java -> mainListFragVm.get()
