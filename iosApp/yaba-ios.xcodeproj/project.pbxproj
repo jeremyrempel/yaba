@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C3FC9722F917E100C066AD /* PhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C3FC9622F917E100C066AD /* PhotoDetailViewController.swift */; };
+		07E867BE22E6D84B00F774E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E867BD22E6D84B00F774E4 /* AppDelegate.swift */; };
+		07E867C322E6D84B00F774E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E867C122E6D84B00F774E4 /* Main.storyboard */; };
+		07E867C522E6D84D00F774E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07E867C422E6D84D00F774E4 /* Assets.xcassets */; };
+		07E867C822E6D84D00F774E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07E867C622E6D84D00F774E4 /* LaunchScreen.storyboard */; };
+		07E867D322E6D84D00F774E4 /* yaba_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E867D222E6D84D00F774E4 /* yaba_iosTests.swift */; };
+		07E867DF22E6DE9500F774E4 /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E867DD22E6DCB500F774E4 /* PhotoTableViewCell.swift */; };
+		07E867E122E6E3B300F774E4 /* PhotoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07E867E022E6E3B300F774E4 /* PhotoTableViewController.swift */; };
+		38950C02564ADA800DCAC1AF /* Pods_yaba_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42E8941DCA2B43209F89C4F5 /* Pods_yaba_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07E867CF22E6D84D00F774E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07E867B222E6D84B00F774E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07E867B922E6D84B00F774E4;
+			remoteInfo = "yaba-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C3FC9622F917E100C066AD /* PhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailViewController.swift; sourceTree = "<group>"; };
+		07E867BA22E6D84B00F774E4 /* yaba-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "yaba-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E867BD22E6D84B00F774E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07E867C222E6D84B00F774E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07E867C422E6D84D00F774E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07E867C722E6D84D00F774E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07E867C922E6D84D00F774E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E867CE22E6D84D00F774E4 /* yaba-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "yaba-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		07E867D222E6D84D00F774E4 /* yaba_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = yaba_iosTests.swift; sourceTree = "<group>"; };
+		07E867D422E6D84D00F774E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07E867DD22E6DCB500F774E4 /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
+		07E867E022E6E3B300F774E4 /* PhotoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTableViewController.swift; sourceTree = "<group>"; };
+		0841C1D7FA48EA811ECA0851 /* Pods-yaba-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yaba-ios.debug.xcconfig"; path = "Target Support Files/Pods-yaba-ios/Pods-yaba-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		42E8941DCA2B43209F89C4F5 /* Pods_yaba_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yaba_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		885AD94D3ABF378368D95818 /* Pods-yaba-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yaba-ios.release.xcconfig"; path = "Target Support Files/Pods-yaba-ios/Pods-yaba-ios.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07E867B722E6D84B00F774E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				38950C02564ADA800DCAC1AF /* Pods_yaba_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E867CB22E6D84D00F774E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07E867B122E6D84B00F774E4 = {
+			isa = PBXGroup;
+			children = (
+				07E867BC22E6D84B00F774E4 /* yaba-ios */,
+				07E867D122E6D84D00F774E4 /* yaba-iosTests */,
+				07E867BB22E6D84B00F774E4 /* Products */,
+				7AC3C16C8D5779FC9CE0FF6A /* Pods */,
+				D805B2521D0EDE243046B02A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07E867BB22E6D84B00F774E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07E867BA22E6D84B00F774E4 /* yaba-ios.app */,
+				07E867CE22E6D84D00F774E4 /* yaba-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07E867BC22E6D84B00F774E4 /* yaba-ios */ = {
+			isa = PBXGroup;
+			children = (
+				07E867BD22E6D84B00F774E4 /* AppDelegate.swift */,
+				07E867C122E6D84B00F774E4 /* Main.storyboard */,
+				07E867E022E6E3B300F774E4 /* PhotoTableViewController.swift */,
+				07C3FC9622F917E100C066AD /* PhotoDetailViewController.swift */,
+				07E867DD22E6DCB500F774E4 /* PhotoTableViewCell.swift */,
+				07E867C422E6D84D00F774E4 /* Assets.xcassets */,
+				07E867C622E6D84D00F774E4 /* LaunchScreen.storyboard */,
+				07E867C922E6D84D00F774E4 /* Info.plist */,
+			);
+			path = "yaba-ios";
+			sourceTree = "<group>";
+		};
+		07E867D122E6D84D00F774E4 /* yaba-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				07E867D222E6D84D00F774E4 /* yaba_iosTests.swift */,
+				07E867D422E6D84D00F774E4 /* Info.plist */,
+			);
+			path = "yaba-iosTests";
+			sourceTree = "<group>";
+		};
+		7AC3C16C8D5779FC9CE0FF6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0841C1D7FA48EA811ECA0851 /* Pods-yaba-ios.debug.xcconfig */,
+				885AD94D3ABF378368D95818 /* Pods-yaba-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D805B2521D0EDE243046B02A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42E8941DCA2B43209F89C4F5 /* Pods_yaba_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07E867B922E6D84B00F774E4 /* yaba-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E867D722E6D84D00F774E4 /* Build configuration list for PBXNativeTarget "yaba-ios" */;
+			buildPhases = (
+				EECEE91B282A8ADBDF30968C /* [CP] Check Pods Manifest.lock */,
+				07E867B622E6D84B00F774E4 /* Sources */,
+				07E867B722E6D84B00F774E4 /* Frameworks */,
+				07E867B822E6D84B00F774E4 /* Resources */,
+				1DDE82A40732B6F1DB3E1674 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "yaba-ios";
+			productName = "yaba-ios";
+			productReference = 07E867BA22E6D84B00F774E4 /* yaba-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07E867CD22E6D84D00F774E4 /* yaba-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07E867DA22E6D84D00F774E4 /* Build configuration list for PBXNativeTarget "yaba-iosTests" */;
+			buildPhases = (
+				07E867CA22E6D84D00F774E4 /* Sources */,
+				07E867CB22E6D84D00F774E4 /* Frameworks */,
+				07E867CC22E6D84D00F774E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07E867D022E6D84D00F774E4 /* PBXTargetDependency */,
+			);
+			name = "yaba-iosTests";
+			productName = "yaba-iosTests";
+			productReference = 07E867CE22E6D84D00F774E4 /* yaba-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07E867B222E6D84B00F774E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Jeremy Rempel";
+				TargetAttributes = {
+					07E867B922E6D84B00F774E4 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					07E867CD22E6D84D00F774E4 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 07E867B922E6D84B00F774E4;
+					};
+				};
+			};
+			buildConfigurationList = 07E867B522E6D84B00F774E4 /* Build configuration list for PBXProject "yaba-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07E867B122E6D84B00F774E4;
+			productRefGroup = 07E867BB22E6D84B00F774E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07E867B922E6D84B00F774E4 /* yaba-ios */,
+				07E867CD22E6D84D00F774E4 /* yaba-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07E867B822E6D84B00F774E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E867C822E6D84D00F774E4 /* LaunchScreen.storyboard in Resources */,
+				07E867C522E6D84D00F774E4 /* Assets.xcassets in Resources */,
+				07E867C322E6D84B00F774E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E867CC22E6D84D00F774E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DDE82A40732B6F1DB3E1674 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yaba-ios/Pods-yaba-ios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-yaba-ios/Pods-yaba-ios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-yaba-ios/Pods-yaba-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECEE91B282A8ADBDF30968C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yaba-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E867B622E6D84B00F774E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E867BE22E6D84B00F774E4 /* AppDelegate.swift in Sources */,
+				07E867E122E6E3B300F774E4 /* PhotoTableViewController.swift in Sources */,
+				07C3FC9722F917E100C066AD /* PhotoDetailViewController.swift in Sources */,
+				07E867DF22E6DE9500F774E4 /* PhotoTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07E867CA22E6D84D00F774E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07E867D322E6D84D00F774E4 /* yaba_iosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07E867D022E6D84D00F774E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07E867B922E6D84B00F774E4 /* yaba-ios */;
+			targetProxy = 07E867CF22E6D84D00F774E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07E867C122E6D84B00F774E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E867C222E6D84B00F774E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07E867C622E6D84D00F774E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07E867C722E6D84D00F774E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07E867D522E6D84D00F774E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07E867D622E6D84D00F774E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07E867D822E6D84D00F774E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0841C1D7FA48EA811ECA0851 /* Pods-yaba-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZRARE998W;
+				INFOPLIST_FILE = "yaba-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jeremyrempel.yaba-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		07E867D922E6D84D00F774E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 885AD94D3ABF378368D95818 /* Pods-yaba-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZRARE998W;
+				INFOPLIST_FILE = "yaba-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jeremyrempel.yaba-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		07E867DB22E6D84D00F774E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZRARE998W;
+				INFOPLIST_FILE = "yaba-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jeremyrempel.yaba-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yaba-ios.app/yaba-ios";
+			};
+			name = Debug;
+		};
+		07E867DC22E6D84D00F774E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ZZRARE998W;
+				INFOPLIST_FILE = "yaba-iosTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.github.jeremyrempel.yaba-iosTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/yaba-ios.app/yaba-ios";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07E867B522E6D84B00F774E4 /* Build configuration list for PBXProject "yaba-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E867D522E6D84D00F774E4 /* Debug */,
+				07E867D622E6D84D00F774E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E867D722E6D84D00F774E4 /* Build configuration list for PBXNativeTarget "yaba-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E867D822E6D84D00F774E4 /* Debug */,
+				07E867D922E6D84D00F774E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07E867DA22E6D84D00F774E4 /* Build configuration list for PBXNativeTarget "yaba-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07E867DB22E6D84D00F774E4 /* Debug */,
+				07E867DC22E6D84D00F774E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07E867B222E6D84B00F774E4 /* Project object */;
+}

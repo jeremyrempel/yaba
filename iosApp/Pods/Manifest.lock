@@ -1,0 +1,23 @@
+PODS:
+  - Kingfisher (5.7.0)
+  - lib (1.0)
+
+DEPENDENCIES:
+  - Kingfisher (~> 5.7)
+  - lib (from `../lib`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Kingfisher
+
+EXTERNAL SOURCES:
+  lib:
+    :path: "../lib"
+
+SPEC CHECKSUMS:
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+  lib: 423180fb8b6bae8f973aff2a1191810354fa78b0
+
+PODFILE CHECKSUM: efdd45b050c7c7914d884da31cae6572755ede59
+
+COCOAPODS: 1.7.5
