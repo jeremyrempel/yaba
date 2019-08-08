@@ -17,7 +17,6 @@ class PhotoTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         let useCase: GetPhotosUseCase = GetPhotosUseCaseKtor()
         useCase.getPhotoList(onComplete: { (response: [ListPhotoResponseRow]) in
             self.data = response

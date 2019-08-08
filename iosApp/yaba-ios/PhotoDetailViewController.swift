@@ -21,14 +21,9 @@ class PhotoDetailViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        //
-        
-        //let blah = Sample().checkMe()
-        
-        let greeting = SampleKt.hello()
-        print("Kotlin Greeting: \"\(greeting)\"")
-        print("received data \(data?.description())")
-        
+        //        let greeting = SampleKt.hello()
+        //        print("Kotlin Greeting: \"\(greeting)\"")
+        print("received data \(String(describing: data?.description()))")
         
         if let thumbUrl = data?.imageUrl, let title = data?.title {
             photoDetailLabel.text = title
