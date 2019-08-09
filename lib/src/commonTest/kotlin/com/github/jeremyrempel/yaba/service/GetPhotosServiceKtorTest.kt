@@ -1,18 +1,21 @@
 package com.github.jeremyrempel.yaba.list.service
 
+import com.autodesk.coroutineworker.CoroutineWorker
 import com.github.jeremyrempel.yaba.list.data.GetPhotosJsonResponse
-import com.github.jeremyrempel.yaba.util.runBlockingTest
+import com.github.jeremyrempel.yaba.util.runBlocking
 import io.ktor.client.HttpClient
 import io.ktor.client.engine.mock.MockEngine
-import io.ktor.client.engine.mock.respondOk
+import io.ktor.client.engine.mock.respond
 import io.ktor.client.features.json.JsonFeature
 import io.ktor.client.features.json.serializer.KotlinxSerializer
 import io.ktor.client.request.get
+import io.ktor.http.HttpHeaders
+import io.ktor.http.HttpStatusCode
+import io.ktor.http.headersOf
+import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
-import kotlinx.serialization.json.JsonConfiguration
 import kotlin.test.Test
 import kotlin.test.assertEquals
-
 
 class GetPhotosServiceKtorTest {
 
@@ -35,29 +38,26 @@ class GetPhotosServiceKtorTest {
             )
         )
 
-
-        runBlockingTest {
+        runBlocking {
             val client = HttpClient(MockEngine) {
                 engine {
                     addHandler {
-                        respondOk(
+                        respond(
                             Json.nonstrict.stringify(
                                 GetPhotosJsonResponse.serializer(),
                                 expectedResponse
-                            )
+                            ),
+                            HttpStatusCode.OK,
+                            headersOf(HttpHeaders.ContentType, "application/json")
                         )
                     }
                 }
                 install(JsonFeature) {
-                    serializer = KotlinxSerializer(Json.nonstrict).apply {
-                        register(GetPhotosJsonResponse.serializer())
-                    }
+                    serializer = KotlinxSerializer(Json.nonstrict)
                 }
             }
 
-            val response = client.get<String>("/")
-            val json = Json(JsonConfiguration.Stable)
-            val result = json.parse(GetPhotosJsonResponse.serializer(), response)
+            val result = client.get<GetPhotosJsonResponse>("/")
 
             assertEquals(result, expectedResponse)
         }
