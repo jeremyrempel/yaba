@@ -1,6 +1,5 @@
 package com.github.jeremyrempel.yaba.list.service
 
-import com.autodesk.coroutineworker.CoroutineWorker
 import com.github.jeremyrempel.yaba.list.data.GetPhotosJsonResponse
 import com.github.jeremyrempel.yaba.util.runBlocking
 import io.ktor.client.HttpClient
@@ -12,7 +11,6 @@ import io.ktor.client.request.get
 import io.ktor.http.HttpHeaders
 import io.ktor.http.HttpStatusCode
 import io.ktor.http.headersOf
-import kotlinx.coroutines.launch
 import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
