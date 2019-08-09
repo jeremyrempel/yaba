@@ -5,7 +5,7 @@ import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class GetPhotosJsonResponse {
+class GetPhotosJsonResponseTest {
 
     private val input = """{
   "total": 1000,
