@@ -51,7 +51,9 @@ class GetPhotosServiceKtorTest {
                     }
                 }
                 install(JsonFeature) {
-                    serializer = KotlinxSerializer(Json.nonstrict)
+                    serializer = KotlinxSerializer().apply {
+                        register(GetPhotosJsonResponse.serializer())
+                    }
                 }
             }
 
